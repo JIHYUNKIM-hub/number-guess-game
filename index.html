@@ -4,13 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h1>숫자 맞추기 게임</h1>
-    <div id="result-area">결과값</div>
-    <input type="'number" id="user-input" />
-    <button id="play-button">Go!</button>
+    <link rel="stylesheet" href="style.css" />
+    <div class="container">
+      <h1 class="title">숫자게임</h1>
+      <div id="result-area">
+        <h1 class="result-text">결과값</h1>
+        <img class="main-img" />
+      </div>
+      <h2 id="chance-area">남은 기회:</h2>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+          <input
+            type="number"
+            id="user-input"
+            class="form-control mb-10"
+            placeholder="1부터 100까지 숫자를 입력"
+          />
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-success mb-2 button-style" id="play-button">
+            Go!!
+          </button>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-warning mt-3 button-style button-reset">
+      리셋!
+    </button>
+
     <script src="main.js"></script>
   </body>
 </html>
